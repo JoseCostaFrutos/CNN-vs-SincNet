@@ -17,7 +17,7 @@ Finalmente, se realiza una comparación entre la precisión proporcionada por am
 
 ## ¿Como ejecutar el código?
 
-1. Para crear la red CNN es necesario trabajar con el archivo CNN. En este archivo en primer lugar se descargan los datos de entrada con los que se va a trabajar. Posteriormente se presentan unas serie de gráficas, que permiten conocer dicha base de datos.
+1. Para crear la red CNN es necesario trabajar con el archivo CNN.py. En este archivo en primer lugar se descargan los datos de entrada con los que se va a trabajar. Posteriormente se presentan unas serie de gráficas, que permiten conocer dicha base de datos.
 
 El siguiente paso es, mediante el método prepare_data, seleccionar el freagmento de cada archivo con el que va a trabajar la red, creando el conjunto de entrenamiento y el de validación.
 
@@ -38,6 +38,6 @@ python speaker_id.py --cfg=cfg/SincNet_TIMIT_nuevo.cfg
 
 Para aplicar el método de mejora es necesario ejecutar en primer lugar el método prepare_data modificando los directorios, y posteriormente ejecutar el comando de SincNet.
 
-python prepare_data.ipynb $TIMIT_FOLDER $OUTPUT_FOLDER data_lists/TIMIT_all.scp
+python prepare_data.py $TIMIT_FOLDER $OUTPUT_FOLDER data_lists/TIMIT_all.scp
 python speaker_id.py --cfg=cfg/SincNet_TIMIT_nuevo_recortado.cfg
 
